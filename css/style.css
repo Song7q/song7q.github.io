@@ -2494,466 +2494,6 @@ color
   padding-left: 8px;
   font-size: 12px;
 }
-.gitment-container {
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #fff;
-  word-wrap: break-word;
-}
-.gitment-container * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.gitment-container *:disabled {
-  cursor: not-allowed;
-}
-.gitment-container a {
-  cursor: pointer;
-  text-decoration: none;
-}
-.gitment-container a:visited {
-  cursor: pointer;
-  text-decoration: none;
-}
-.gitment-container a:hover {
-  text-decoration: underline;
-}
-.gitment-container .gitment-hidden {
-  display: none;
-}
-.gitment-container .gitment-spinner-icon {
-  fill: #fff;
-  -webkit-animation: gitment-spin 1s steps(12) infinite;
-  -webkit-animation: gitment-spin 1s steps(12) infinite;
-  -moz-animation: gitment-spin 1s steps(12) infinite;
-  -ms-animation: gitment-spin 1s steps(12) infinite;
-  animation: gitment-spin 1s steps(12) infinite;
-}
-@-webkit-keyframes gitment-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.gitment-root-container,
-.gitment-header-container {
-  margin: 19px 40px;
-}
-.gitment-header-like-btn {
-  cursor: pointer;
-}
-.gitment-comment-like-btn {
-  cursor: pointer;
-  float: right;
-}
-.gitment-comment-like-btn.liked {
-  color: #f44336;
-}
-.gitment-header-like-btn svg {
-  vertical-align: middle;
-  height: 30px;
-  width: 30px;
-}
-.gitment-comment-like-btn svg {
-  vertical-align: middle;
-  height: 20px;
-  width: 20px;
-}
-.gitment-header-like-btn.liked svg,
-.gitment-comment-like-btn.liked svg {
-  fill: #f44336;
-}
-a.gitment-header-issue-link {
-  float: right;
-  line-height: 30px;
-  color: #fff;
-}
-a.gitment-header-issue-link:visited {
-  float: right;
-  line-height: 30px;
-  color: #666;
-}
-a.gitment-header-issue-link:hover {
-  color: #666;
-}
-.gitment-comments-loading,
-.gitment-comments-error,
-.gitment-comments-empty {
-  text-align: center;
-  margin: 50px 0;
-}
-.gitment-comments-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 38px;
-}
-.gitment-comment,
-.gitment-editor-container {
-  position: relative;
-  min-height: 60px;
-  padding-left: 60px;
-  margin: 19px 0;
-}
-.gitment-comment-avatar,
-.gitment-editor-avatar {
-  float: left;
-  margin-left: -60px;
-}
-.gitment-comment-avatar,
-.gitment-comment-avatar-img,
-.gitment-editor-avatar-img {
-  width: 44px;
-  height: 44px;
-  border-radius: 3px;
-}
-.gitment-editor-avatar svg {
-  width: 44px;
-  height: 44px;
-  border-radius: 3px;
-}
-.gitment-editor-avatar .gitment-github-icon {
-  fill: #fff;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.gitment-comment-main {
-  position: relative;
-  border: 1px solid #262626;
-  border-radius: 0;
-}
-.gitment-editor-main {
-  position: relative;
-  border: 1px solid #262626;
-  border-radius: 0;
-}
-.gitment-editor-main::before,
-.gitment-editor-main::after {
-  position: absolute;
-  top: 11px;
-  left: -16px;
-  display: block;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-  content: "";
-  border-color: transparent;
-  border-style: solid solid outset;
-}
-.gitment-comment-main::before,
-.gitment-comment-main::after {
-  position: absolute;
-  top: 11px;
-  left: -16px;
-  display: block;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-  content: "";
-  border-color: transparent;
-  border-style: solid solid outset;
-}
-.gitment-editor-main::before,
-.gitment-comment-main::before {
-  border-width: 8px;
-  border-right-color: #262626;
-}
-.gitment-editor-main::after,
-.gitment-comment-main::after {
-  margin-top: 1px;
-  margin-left: 2px;
-  border-width: 7px;
-  border-right-color: #262626;
-}
-.gitment-comment-header {
-  margin: 12px 15px;
-  color: #fff;
-  background-color: #3f3f3f;
-  border-radius: 3px;
-}
-.gitment-editor-header {
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid #262626;
-}
-a.gitment-comment-name {
-  font-weight: 600;
-  color: #666;
-}
-a.gitment-comment-name:visited {
-  font-weight: 600;
-  color: #666;
-}
-.gitment-editor-tabs {
-  margin-bottom: -1px;
-  margin-left: -1px;
-}
-.gitment-editor-tab {
-  display: inline-block;
-  padding: 11px 12px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4094c7;
-  text-decoration: none;
-  background-color: transparent;
-  border-width: 0 1px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 0;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  outline: none;
-}
-.gitment-editor-tab.gitment-selected {
-  color: #fff;
-  background-color: #3f3f3f;
-  border-color: #262626;
-}
-.gitment-editor-login {
-  float: right;
-  margin-top: -30px;
-  margin-right: 15px;
-}
-a.gitment-footer-project-link,
-a.gitment-editor-login-link {
-  color: #2196f3;
-}
-a.gitment-footer-project-link:visited,
-a.gitment-editor-login-link:visited {
-  color: #2196f3;
-}
-a.gitment-editor-logout-link {
-  color: #4094c7;
-}
-a.gitment-editor-logout-link:visited {
-  color: #666;
-}
-a.gitment-editor-logout-link:hover {
-  color: #2196f3;
-  text-decoration: none;
-}
-.gitment-comment-body {
-  position: relative;
-  margin: 12px 15px;
-  overflow: hidden;
-  border-radius: 3px;
-}
-.gitment-comment-body-folded {
-  cursor: pointer;
-}
-.gitment-comment-body-folded::before {
-  display: block !important;
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 50px;
-  pointer-events: none;
-  background: -webkit--webkit-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,0.9));
-  background: -webkit--moz-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,0.9));
-  background: -webkit--ms-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,0.9));
-  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.9));
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,0), rgba(47,47,47,0.9));
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,0), rgba(47,47,47,0.9));
-  background: -ms-linear-gradient(270deg, rgba(255,255,255,0), rgba(47,47,47,0.9));
-  background: linear-gradient(180deg, rgba(255,255,255,0), rgba(47,47,47,0.9));
-}
-.gitment-comment-body-folded::after {
-  display: block !important;
-  content: "Click to Expand" !important;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  left: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: #3f3f3f;
-}
-.gitment-editor-body {
-  margin: 0;
-}
-.gitment-comment-body > *:first-child,
-.gitment-editor-preview > *:first-child {
-  margin-top: 0 !important;
-}
-.gitment-comment-body > *:last-child,
-.gitment-editor-preview > *:last-child {
-  margin-bottom: 0 !important;
-}
-.gitment-editor-body textarea {
-  display: block;
-  width: 100%;
-  min-height: 150px;
-  max-height: 500px;
-  padding: 16px;
-  resize: vertical;
-  max-width: 100%;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
-  background-color: #3f3f3f;
-  color: #fff;
-  vertical-align: middle;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  overflow: visible;
-}
-.gitment-editor-body textarea:focus {
-  background-color: #3f3f3f;
-}
-.gitment-editor-preview {
-  min-height: 150px;
-  padding: 16px;
-  background-color: transparent;
-  width: 100%;
-  font-size: 14px;
-  line-height: 1.5;
-  word-wrap: break-word;
-}
-.gitment-editor-footer {
-  padding: 0;
-  margin-top: 10px;
-}
-.gitment-editor-footer::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-a.gitment-editor-footer-tip {
-  display: inline-block;
-  padding-top: 10px;
-  font-size: 12px;
-  color: #666;
-}
-a.gitment-editor-footer-tip:hover {
-  color: #2196f3;
-  text-decoration: none;
-}
-.gitment-comments-pagination {
-  list-style: none;
-  text-align: right;
-  border-radius: 0;
-  margin: -19px 0 19px 0;
-}
-.gitment-comments-page-item {
-  display: inline-block;
-  cursor: pointer;
-  border: 1px solid #262626;
-  margin-left: -1px;
-  padding: 0.25rem 0.5rem;
-}
-.gitment-comments-page-item:hover,
-.gitment-comments-page-item.gitment-selected {
-  background-color: #f5f5f5;
-}
-.gitment-editor-submit,
-.gitment-comments-init-btn {
-  color: #fff;
-  background-color: #00bcd4;
-  position: relative;
-  display: inline-block;
-  padding: 7px 13px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-background-size: 110% 110%;
-  -moz-background-size: 110% 110%;
-  background-size: 110% 110%;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.gitment-editor-submit:hover {
-  background-color: #4094c7;
-}
-.gitment-comments-init-btn:hover {
-  background-color: #4094c7;
-}
-.gitment-comments-init-btn:disabled {
-  color: rgba(255,255,255,0.75);
-  background-color: #4094c7;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.gitment-editor-submit {
-  float: right;
-}
-.gitment-editor-submit:disabled {
-  color: rgba(255,255,255,0.75);
-  background-color: #4094c7;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.gitment-footer-container {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-align: right;
-  font-size: 12px;
-}
-@-moz-keyframes gitment-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes gitment-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes gitment-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes gitment-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .body-wrap {
   margin-bottom: 80px;
 }
@@ -2976,6 +2516,10 @@ a.gitment-editor-footer-tip:hover {
 }
 .article img {
   max-width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
   vertical-align: -webkit-baseline-middle;
 }
 @-webkit-keyframes cd-bounce-1 {
@@ -3057,6 +2601,11 @@ a.gitment-editor-footer-tip:hover {
   -webkit-box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
   box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
 }
+.article-inner p,
+.article-inner ul,
+.article-inner ol > li {
+  padding-left: 1em;
+}
 .article-header {
   border-left: rgba(63,63,63,0) 5px solid;
   padding: 15px 0px 15px 25px;
@@ -3079,15 +2628,15 @@ a.gitment-editor-footer-tip:hover {
   padding-left: 30px;
 }
 .article-entry p {
-  margin-top: 10px;
+  margin-top: 0.7em;
 }
 .article-entry p code,
 .article-entry li code {
   padding: 1px 3px;
   margin: 0 3px;
-  color: #999;
-  background: #002b36;
-  border: 1px dashed #ccc;
+  color: #d1d1d2;
+  background: rgba(32,33,43,0.9);
+  border: 1px dashed #20212b;
   border-radius: 3px;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
   word-wrap: break-word;
@@ -3099,13 +2648,13 @@ a.gitment-editor-footer-tip:hover {
 .article-entry em {
   font-style: italic;
 }
-.article-entry ul,
-.article-entry ol {
-  font-size: 14px;
+.article-entry li {
+  text-indent: -1em;
+  padding-left: 2em;
 }
 .article-entry li ul,
 .article-entry li ol {
-  margin-left: 30px;
+  padding-left: 0;
 }
 .article-entry li ul li:before,
 .article-entry li ol li:before {
@@ -3181,8 +2730,8 @@ a.gitment-editor-footer-tip:hover {
   background: none;
 }
 .article-entry code {
-  color: #999;
-  background: #002b36;
+  color: #d1d1d2;
+  background: rgba(32,33,43,0.9);
   padding: 1px 3px;
   border-radius: 5px;
 }
@@ -3389,6 +2938,41 @@ a.gitment-editor-footer-tip:hover {
 .copyright .copy-path:hover {
   color: #808080;
   cursor: pointer;
+}
+kbd {
+  display: inline;
+  min-width: 1em;
+  padding: 0.2em 0.3em;
+  margin: 0.3em;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: none;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #505050;
+  background: -moz--webkit-linear-gradient(top, #3c3c3c, #505050);
+  background: -moz--moz-linear-gradient(top, #3c3c3c, #505050);
+  background: -moz--ms-linear-gradient(top, #3c3c3c, #505050);
+  background: -moz-linear-gradient(to bottom, #3c3c3c, #505050);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#505050));
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#505050));
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#505050));
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#505050));
+  color: #fafafa;
+  text-shadow: -1px -1px 0 #464646;
+  -moz-box-shadow: inset 0 0 1px #969696, inset 0 -0.05em 0.4em #505050, 0 0.1em 0 #1e1e1e, 0 0.1em 0.1em rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 1px #969696, inset 0 -0.05em 0.4em #505050, 0 0.1em 0 #1e1e1e, 0 0.1em 0.1em rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 1px #969696, inset 0 -0.05em 0.4em #505050, 0 0.1em 0 #1e1e1e, 0 0.1em 0.1em rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 1px #969696, inset 0 -0.05em 0.4em #505050, 0 0.1em 0 #1e1e1e, 0 0.1em 0.1em rgba(0,0,0,0.3);
 }
 @-moz-keyframes cd-bounce-1 {
   0% {
@@ -3660,7 +3244,7 @@ a.gitment-editor-footer-tip:hover {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #002b36;
+  background: #282a36;
   margin: 10px 0;
   padding: 10px 10px;
   overflow: auto;
@@ -3669,11 +3253,27 @@ a.gitment-editor-footer-tip:hover {
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
-  color: #9e90ff;
+  color: #009688;
+}
+.article-entry h2:before,
+.article-entry h3:before,
+.article-entry h4:before,
+.article-entry h5:before,
+.article-entry h6:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-radius: 2px;
+  background: #ec407a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.3);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.3);
 }
 .article-entry pre,
 .article-entry code {
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace;
+  font-family: Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, monospace;
 }
 .article-entry blockquote {
   background-color: #555;
@@ -3691,36 +3291,36 @@ a.gitment-editor-footer-tip:hover {
   box-sizing: border-box;
 }
 .article-entry code {
-  background: #002b36;
+  background: rgba(32,33,43,0.9);
   padding: 0 0.3em;
   border: none;
 }
 .article-entry pre {
-  color: #fff;
+  color: #c3cee3;
 }
 .article-entry pre code {
   background: none;
   text-shadow: none;
   padding: 0;
-  color: #fff;
+  color: #c3cee3;
 }
 .article-entry p code {
   margin: 0 3px;
   border: dashed 1px #000;
-  color: #999;
+  color: #d1d1d2;
   padding: 1px 8px;
   font-size: 90%;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-family: Consolas, "Courier New", Courier;
   text-shadow: none;
-  background-color: #002b36;
+  background-color: rgba(32,33,43,0.9);
   word-wrap: break-word;
   white-space: pre;
 }
 .article-entry p a {
-  border: dashed 1px #000;
-  padding: 8px 8px;
+  border: solid 1px #000;
+  padding: 0 4px;
   border-radius: 5px;
   background-color: #2f2e2e;
   word-wrap: break-word;
@@ -3740,64 +3340,60 @@ a.gitment-editor-footer-tip:hover {
   color: #fff;
 }
 .article-entry h1 {
-  font-size: 1.5em;
-  margin-top: 30px;
+  font-size: 2em;
+  margin: 1em 0;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  color: #ff4081;
 }
 .article-entry h2 {
+  padding: 0 0 0 20px;
+  line-height: 1.8em;
+  position: relative;
   font-size: 1.3em;
-  margin-top: 20px;
-  font-weight: 300;
-  padding-bottom: 5px;
-  margin: 0.5em auto;
-  font-weight: 700;
-  color: #999;
-  padding-bottom: 5px;
-  text-align: center;
-}
-.article-entry h2::after,
-.article-entry h2::before {
-  content: " —— ";
+  margin-top: 0.8em;
+  font-weight: bold;
 }
 .article-entry h3 {
-  margin: 0.5em auto;
-  color: #fff;
-  background: rgba(0,0,0,0.27);
-  border: 1px dashed #020202;
-  padding: 0.2em 0.6em;
+  margin: 1em 0 0.6em 0;
+  padding: 0 0 0 20px;
   font-weight: normal;
-  border-radius: 6px;
+  color: #fafafa;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+  position: relative;
 }
-.article-entry h3:hover {
-  content: " > ";
+.article-entry h3 + p {
+  margin-top: 0;
 }
 .article-entry h4 {
-  margin: 0.5em auto;
-  color: #fff;
-  background: #5a5a5a;
-  border: 1px dashed #020202;
+  position: relative;
+  margin: 1em 0 0.6em 1em;
+  color: #fafafa;
   padding: 0.2em 0.6em;
   font-weight: normal;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
 }
 .article-entry h5 {
-  margin: 0.5em auto;
-  color: #fff;
-  background: #8e8d8d;
-  border: 1px dashed #020202;
+  position: relative;
+  margin: 1em 0 0.6em 2em;
+  color: #fafafa;
   padding: 0.2em 0.6em;
   font-weight: normal;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
 }
 .article-entry h6 {
-  margin: 0.5em auto;
-  color: #fff;
-  border: 1px dashed #020202;
+  position: relative;
+  margin: 1em 0 0.6em 3em;
+  color: #fafafa;
   padding: 0.2em 0.6em;
   font-weight: normal;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+}
+.article-entry h3:before {
+  background: #f48fb1;
+}
+.article-entry h4:before,
+.article-entry h5:before,
+.article-entry h6:before {
+  background: #fce4ec;
 }
 .article-entry hr {
   background-color: #2f2f2f;
@@ -3829,23 +3425,10 @@ a.gitment-editor-footer-tip:hover {
 .article-entry li:hover {
   background-color: #2e2e2e;
 }
-.article-entry .highlight::before {
-  content: attr(data-lang) " code";
-  display: block;
-  background-color: #0083a0;
-  margin: 0 -10px 16px -10px;
-  padding: 8px 16px;
-  color: #efefef;
-  font-family: Lato, "Microsoft YaHei", sans-serif;
-  font-size: 1.1rem;
-  text-shadow: none;
-  border-bottom: dashed 1px #000;
-  text-transform: capitalize;
-}
 .article-entry .highlight {
   border-radius: 4px;
   padding: 0 10px;
-  color: #fff;
+  color: #c3cee3;
 }
 .article-entry .highlight pre {
   border: none;
@@ -3872,7 +3455,7 @@ a.gitment-editor-footer-tip:hover {
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #75715e;
+  color: #546e7a;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -3903,12 +3486,12 @@ a.gitment-editor-footer-tip:hover {
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #002b36;
+  background: #282a36;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace;
+  font-family: Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, monospace;
   margin: 0;
 }
 .article-entry .gist .gist-file .gist-data {
@@ -3929,8 +3512,8 @@ a.gitment-editor-footer-tip:hover {
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #002b36;
-  color: #75715e;
+  background: #282a36;
+  color: #546e7a;
   font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -3944,31 +3527,16 @@ a.gitment-editor-footer-tip:hover {
 .article-entry .gist .gist-file .gist-meta a:hover {
   text-decoration: underline;
 }
-pre .doctype {
-  color: #586e75;
-}
-pre .tag {
-  color: #839496;
-}
-pre .title {
-  color: #66d9ef;
-}
-pre .string {
-  color: #2aa198;
-}
-pre .attribute {
-  color: #b58900;
-}
 pre .cpp,
 pre .annotation,
 pre .command {
   color: #258fb8;
 }
 pre .comment {
-  color: #75715e;
+  color: #546e7a;
 }
 pre .keyword {
-  color: #66d9ef;
+  color: #c792ea;
 }
 pre .function,
 pre .class .params {
@@ -3977,18 +3545,18 @@ pre .class .params {
 pre .params,
 pre .function,
 pre .css .value {
-  color: #fd971f;
+  color: #ff5370;
 }
 pre .css ~ * .tag,
 pre .at_rule,
 pre .preprocessor {
-  color: #f92672;
+  color: code-tag;
 }
 pre .built_in,
 pre .class,
 pre .css ~ * .class,
 pre .function {
-  color: #a6e22e;
+  color: code-attr;
 }
 pre .value,
 pre .number {
@@ -3996,13 +3564,58 @@ pre .number {
 }
 pre .id,
 pre .css ~ * .id {
-  color: #fd971f;
+  color: #ff5370;
 }
 pre .link_label,
 pre .code,
 pre .operator,
 pre .link_url {
   color: #258fb8;
+}
+figure.html pre .doctype {
+  color: #c792ea;
+}
+figure.html pre .tag {
+  color: #ff5370;
+}
+figure.html pre .attr {
+  color: #c792ea;
+}
+figure.html pre .title {
+  color: #66d9ef;
+}
+figure.html pre .string {
+  color: #c3e887;
+}
+figure.css pre [class^="selector"] {
+  color: #ffc251;
+}
+figure.css pre .attribute {
+  color: #6dc2b8;
+}
+figure.css pre .value {
+  color: #ffea7d;
+}
+figure.css pre .built_in {
+  color: #c792ea;
+}
+figure.css pre .string {
+  color: #c3e887;
+}
+figure.css pre .number {
+  color: #f187b3;
+}
+figure.javascript pre .function {
+  color: #c3cee3;
+}
+figure.javascript pre .title {
+  color: #4caf50;
+}
+figure.javascript pre .number {
+  color: #f187b3;
+}
+figure.javascript pre .string {
+  color: #c3e887;
 }
 #footer {
   font-size: 12px;
@@ -4741,6 +4354,22 @@ pre .link_url {
   .youyan {
     padding: 20px 10px;
   }
+}
+.ds-comment-body > p {
+  color: #bdbdbd !important;
+}
+.ds-comment-body .ds-comment-header > span.ua > span[class^="ua_"] {
+  background: #9575cd !important;
+  padding: 0 5px !important;
+  border: 1px solid #9575cd !important;
+  border-radius: 6px !important;
+}
+.ds-comment-body .ds-comment-header > span.ua > span[class^="os_"] {
+  margin-left: 1em !important;
+  background: #f06292 !important;
+  padding: 0 5px !important;
+  border: 1px solid #f06292 !important;
+  border-radius: 6px !important;
 }
 .inner1 {
   margin: 0 40px;
